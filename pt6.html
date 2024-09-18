@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .pricing-plan {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-plan h2 {
+            margin-top: 0;
+        }
+        .pricing-plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing-plan ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .pricing-plan ul li:last-child {
+            border-bottom: none;
+        }
+        .pricing-plan .price {
+            font-size: 24px;
+            color: #333;
+        }
+        .pricing-plan button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .pricing-plan button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="pricing-plan">
+            <h2>Basic</h2>
+            <p class="price">$19.99/month</p>
+            <ul>
+                <li>Access to basic courses</li>
+                <li>Email support</li>
+                <li>Community access</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="pricing-plan">
+            <h2>Standard</h2>
+            <p class="price">$49.99/month</p>
+            <ul>
+                <li>Access to all courses</li>
+                <li>Priority email support</li>
+                <li>Community access</li>
+                <li>Monthly webinars</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="pricing-plan">
+            <h2>Premium</h2>
+            <p class="price">$99.99/month</p>
+            <ul>
+                <li>Access to all courses</li>
+                <li>24/7 support</li>
+                <li>Community access</li>
+                <li>Monthly webinars</li>
+                <li>1-on-1 coaching</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
