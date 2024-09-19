@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CrestWave Advertising Services</title>
+
+<style>
+body {font-family: Arial, sans-serif;margin: 0;padding: 0;background-color: #f4f4f4;}header {background-color: #333;color: #fff;padding: 1rem 0;text-align: center;}main {padding: 2rem;}.pricing {display: flex;justify-content: space-around;flex-wrap: wrap;}.card {background-color: #fff;border: 1px solid #ddd;border-radius: 5px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);margin: 1rem;padding: 1rem;text-align: center;width: 300px;}.card h2 {margin-top: 0;}.price {font-size: 1.5rem;color: #333;}button {background-color: #007bff;border: none;border-radius: 5px;color: #fff;cursor: pointer;padding: 0.5rem 1rem;text-transform: uppercase;}button:hover {background-color: #0056b3;}.affiliate-link {margin-top: 1rem;font-size: 0.9rem;color: #555;}
+</style>
+
+</head><body><header><h1>Welcome to CrestWave Advertising Services</h1></header><main><section class="pricing"><div class="card"><h2>Meta Advertising</h2><p>Reach your audience on Facebook and Instagram.</p><p class="price">$500/month</p><button onclick="bookNow('Meta Advertising')">Book Now</button><p class="affiliate-link">Affiliate Link: <span id="meta-affiliate-link"></span></p></div><div class="card"><h2>Google Advertising</h2><p>Advertise on Google Search and Display Network.</p><p class="price">$600/month</p><button onclick="bookNow('Google Advertising')">Book Now</button><p class="affiliate-link">Affiliate Link: <span id="google-affiliate-link"></span></p></div><div class="card"><h2>Microsoft Advertising</h2><p>Advertise on Bing and LinkedIn.</p><p class="price">$550/month</p><button onclick="bookNow('Microsoft Advertising')">Book Now</button><p class="affiliate-link">Affiliate Link: <span id="microsoft-affiliate-link"></span></p></div></section></main><footer><p>© 2024 CrestWave. All rights reserved.</p></footer>
+
+<script>
+function bookNow(service) {alert(`You have selected ${service}. Our team will contact you soon!`);}// Function to generate affiliate linksfunction generateAffiliateLinks() {const affiliateId = 'YOUR_AFFILIATE_ID'; // Replace with actual affiliate IDdocument.getElementById('meta-affiliate-link').innerText = `https://crestwave.com/book?service=meta&affiliate=${affiliateId}`;document.getElementById('google-affiliate-link').innerText = `https://crestwave.com/book?service=google&affiliate=${affiliateId}`;document.getElementById('microsoft-affiliate-link').innerText = `https://crestwave.com/book?service=microsoft&affiliate=${affiliateId}`;}// Call the function to generate affiliate links on page loadwindow.onload = generateAffiliateLinks;
+</script>
+
+</body></html>
+
+
